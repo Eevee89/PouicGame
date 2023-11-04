@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PouicGame.MainPage"
+             BackgroundColor="#B1CCEF"
+             Title="FAN GAME PAR JORIS">
+
+    <Grid ColumnDefinitions=".33*, .34*, .33*"
+          RowDefinitions=".25*, .25*, .25*, .25*"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          Padding="15">
+
+        <Button Text="Choisissez votre thème"
+                FontSize="50"
+                BackgroundColor="#B1CCEF"
+                BorderColor="#B1CCEF"
+                FontAttributes="Bold"
+                Grid.ColumnSpan="3"
+                HorizontalOptions="Center"
+                Clicked="Statistiques"/>
+
+        <Image Source="logo_compagnie_pouic_2023.png"
+               Grid.Column="1"
+               Grid.Row="1"
+               Grid.RowSpan="4"
+               VerticalOptions="Center"/>
+
+        <Button x:Name="MHGames"
+                Text="Monster Hunter"
+                FontSize="40"
+                TextColor="#C2191F"
+                FontAttributes="Bold"
+                BackgroundColor="#53277E"
+                CornerRadius="5"
+                Grid.Row="1"
+                Clicked="LaunchMHGames"/>
+
+        <Button x:Name="PokeGames"
+                Text="Pokémon"
+                FontSize="40"
+                TextColor="#ECDF7A"
+                FontAttributes="Bold"
+                BackgroundColor="#B5B5BD"
+                CornerRadius="5"
+                Grid.Row="1"
+                Grid.Column="2"
+                Clicked="LaunchPokeGames"/>
+
+        <Button x:Name="MarioGames"
+                Text="Mario"
+                FontSize="40"
+                TextColor="#FFF"
+                FontAttributes="Bold"
+                BackgroundColor="#F00"
+                CornerRadius="5"
+                Grid.Row="3"
+                Clicked="LaunchMarioGames"/>
+
+        <!--#FF8F00 #00F-->
+        <Button x:Name="SplatGames"
+                Text="Splatoon"
+                FontSize="40"
+                TextColor="#F0F"
+                FontAttributes="Bold"
+                BackgroundColor="#0F0"
+                CornerRadius="5"
+                Grid.Row="3"
+                Grid.Column="3"
+                Clicked="LaunchSplatGames"/>
+
+    </Grid>
+
+</ContentPage>

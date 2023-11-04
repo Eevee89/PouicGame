@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PouicGame.MHMainPage"
+             BackgroundImageSource="loadscreen.jpg"
+             Title="Qui veut gagner des zennys ? (Fangame par Joris)">
+
+    <AbsoluteLayout>
+
+        <Image Source="logo_pouic_mh.png"
+               AbsoluteLayout.LayoutBounds="655, 275, 250, 250" />
+
+        <CollectionView x:Name="AspirantsView"
+                        AbsoluteLayout.LayoutBounds="20, 20">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="1">
+                        <Frame Padding="1">
+                            <Label Text="{Binding .}"
+                                   FontSize="20"
+                                   TextColor="Yellow"
+                                   BackgroundColor="DarkBlue"
+                                   HorizontalTextAlignment="Center"
+                                   />
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <CollectionView x:Name="AguerrisView"
+                        AbsoluteLayout.LayoutBounds="1330, 20">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="1">
+                        <Frame Padding="1">
+                            <Label Text="{Binding .}"
+                                   FontSize="20"
+                                   TextColor="Yellow"
+                                   BackgroundColor="DarkBlue"
+                                   HorizontalTextAlignment="Center"
+                                   />
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label  AbsoluteLayout.LayoutBounds="580, 50"
+                Text="             Bienvenue Hunter &#10; à 'Qui veut gagner des zenny ?'"
+                BackgroundColor="DarkBlue"
+                TextColor="Yellow"
+                FontSize="25"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+
+        <Button AbsoluteLayout.LayoutBounds="690, 550"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="20"
+                x:Name="NormalBtn"
+                Text="Niveau Aspirant"
+                Clicked="OnLauncherClicked"
+                HorizontalOptions="Center" />
+
+        <Button AbsoluteLayout.LayoutBounds="695, 620"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="20"
+                x:Name="HardBtn"
+                Text="Niveau Aguerri"
+                Clicked="OnLauncherClicked"
+                HorizontalOptions="Center" />
+
+        <Button AbsoluteLayout.LayoutBounds="715, 700"
+                ImageSource="return.png"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="20"
+                x:Name="ReturnBtn"
+                Text="Retour"
+                Clicked="Retour"
+                HorizontalOptions="Center" />
+
+    </AbsoluteLayout>
+
+</ContentPage>

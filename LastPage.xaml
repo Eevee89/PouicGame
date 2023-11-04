@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PouicGame.LastPage"
+             BackgroundImageSource="thanksscreen.jpg">
+
+    <AbsoluteLayout>
+
+        <Label Text="Merci d'avoir joué"
+                AbsoluteLayout.LayoutBounds="575, 350"
+                FontAttributes="Bold"
+                FontSize="40"
+                TextColor="#FFF"/>
+        
+        <Button x:Name="Accueil"
+                Text="Accueil"
+                AbsoluteLayout.LayoutBounds="500, 650"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="40"
+                TextColor="#FFF"
+                Clicked="ReturnToMain"/>
+
+        <Button x:Name="Rejouer"
+                Text="Rejouer"
+                AbsoluteLayout.LayoutBounds="825, 650"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="40"
+                TextColor="#FFF"
+                Clicked="ReturnToMain"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>

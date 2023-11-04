@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PouicGame.MarioGames"
+             BackgroundImageSource="mario_bg.jpg">
+
+    <AbsoluteLayout>
+        <Label AbsoluteLayout.LayoutBounds="600, 400"
+               Text="Que voulez-vous faire ?"
+               FontSize="40"/>
+
+        <Button AbsoluteLayout.LayoutBounds="722, 600"
+                Text="Quiz"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="40"
+                TextColor="#FFF"
+                Clicked="LaunchSplatQuiz"/>
+
+        <Button AbsoluteLayout.LayoutBounds="700, 700"
+                Text="Retour"
+                ImageSource="return.png"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="#FFF"
+                Clicked="Retour"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>

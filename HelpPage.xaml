@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PouicGame.HelpPage"
+             BackgroundImageSource="questboard.jpg">
+
+    <Grid x:Name="HelpGrid"
+          RowDefinitions=".45*, .45*, .1*"
+          ColumnDefinitions=".4*, .1*, .1*, .4*"
+          RowSpacing="20"
+          ColumnSpacing="5"
+          Padding="20">
+
+        <Label x:Name="Help1"
+               Grid.ColumnSpan="2"
+               LineBreakMode="CharacterWrap"
+               MaxLines="5"
+               FontSize="20"
+               Text="Aide 1"
+               TextColor="Yellow"
+               BackgroundColor="DarkBlue"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10"/>
+
+        <Label x:Name="Help2"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+               LineBreakMode="CharacterWrap"
+               MaxLines="5"
+               FontSize="20"
+               Text="Aide 2"
+               TextColor="Yellow"
+               BackgroundColor="DarkBlue"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10"/>
+
+        <Label x:Name="Help3"
+               Grid.Row="1"
+               Grid.ColumnSpan="2"
+               LineBreakMode="CharacterWrap"
+               MaxLines="5"
+               FontSize="20"
+               Text="Aide 3"
+               TextColor="Yellow"
+               BackgroundColor="DarkBlue"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10"/>
+
+        <Label x:Name="Help4"
+               Grid.Row="1"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+               LineBreakMode="CharacterWrap"
+               MaxLines="5"
+               FontSize="20"
+               Text="Aide 4"
+               TextColor="Yellow"
+               BackgroundColor="DarkBlue"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               Margin="10"/>
+
+
+        <Button x:Name="ReturnBtn"
+                Grid.Row="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Text="Retour"
+                BorderColor="YellowGreen"
+                BorderWidth="2"
+                BackgroundColor="DarkBlue"
+                FontAttributes="Bold"
+                FontSize="20"
+                Clicked="Return2Quiz"/>
+
+    </Grid>
+
+</ContentPage>
